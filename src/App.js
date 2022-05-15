@@ -13,7 +13,7 @@ const [value , setValue] = useState({
 });
 
 useEffect(() =>{
-  {document.title = 'Retry exam fourth'}
+  document.title = 'Retry exam fourth'
   fetch(`https://jsonplaceholder.typicode.com/users/`)
     .then((res) => res.json())
     .then((data) =>
@@ -27,7 +27,7 @@ useEffect(() =>{
 },[])
 
 const goPosts = (evt) =>{
-  {document.title = 'Posts of users'}
+  document.title = 'Posts of users'
 const btnId = evt.target.dataset.userId - 0;
 
 const find = value.data.find(a => a.id === btnId);
@@ -45,7 +45,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts?userId=${find.id}`)
     );
 }
 const goComments = (evt) =>{
-  {document.title = 'Comments of posts'}
+  document.title = 'Comments of posts'
   const btnId = evt.target.dataset.postId - 0;
 
 const find = value.posts.find(a => a.id === btnId);
