@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: darkgrey; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.App{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.App >ol{
+    width: 32%;
+    list-style: none;
+    width: 33.3%;
+    height: 100vh;
+    background: #ecf8f8;
+    margin: 0;
+    padding:1% 1.5%;
+    overflow-y: scroll;
+}
+
+li{
+    width: 100%;
+    height: auto;
+    padding: 3px 4px;
+    background: #edecf3;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 30%;
+    margin: 10px auto;
+}
